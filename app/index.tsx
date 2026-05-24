@@ -1,11 +1,15 @@
 "use strict";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
-import Spa from "./spa";
+import Spa from "./spa.tsx";
+import Sandbox from "./test.tsx";
 
 const root = createRoot(document.getElementById("react-root") as HTMLElement);
 root.render(
-    <React.StrictMode>
+    // <React.StrictMode>
+    <>
         <Spa />
-    </React.StrictMode>,
+        <Sandbox />
+    </>,
+    // </React.StrictMode>,
 );
